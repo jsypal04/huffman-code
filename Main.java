@@ -67,8 +67,6 @@ public class Main {
             charQ.enqueue(new Node(frequencies.get(key), key, null));
         }
 
-        charQ.print();
-
         while (charQ.getSize() > 1) {
             Node small1 = charQ.dequeue();
             Node small2 = charQ.dequeue();
@@ -82,10 +80,15 @@ public class Main {
 
         getCodeTable(huffmanTree.root, "", codeTable);
 
+        // print the code table
+        for (Character key : codeTable.keySet()) {
+            System.out.print(key + ": ");
+            System.out.println(codeTable.get(key));
+        }
+
         String encodedText = "";
         for (int i = 0; i < text.length(); i++) {
             encodedText += codeTable.get(text.charAt(i));
         }
-        System.out.println(encodedText);
     }
 }                                                 
