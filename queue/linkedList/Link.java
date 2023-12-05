@@ -1,6 +1,6 @@
 package queue.linkedList;
 
-import binaryTree.Node;
+import queue.Node;
 
 // class to be a link in a linked list
 public class Link {

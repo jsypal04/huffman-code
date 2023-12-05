@@ -1,5 +1,4 @@
-import binaryTree.BinaryTree;
-import binaryTree.Node;
+import queue.Node;
 import queue.PriorityQueue;
 
 import java.io.File;
@@ -50,7 +49,6 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException, IOException {
         // initialize main data structures
         PriorityQueue charQ = new PriorityQueue();
-        BinaryTree huffmanTree = new BinaryTree();
         HashMap<Character, String> codeTable = new HashMap<Character, String>();
         HashMap<Character, Integer> frequencies = new HashMap<Character, Integer>();
 
@@ -95,9 +93,9 @@ public class Main {
         }
 
         // set the root of the huffman tree to the last node in the priority queue
-        huffmanTree.setRoot(charQ.dequeue());
+        // huffmanTree.setRoot(charQ.dequeue());
 
-        getCodeTable(huffmanTree.root, "", codeTable);
+        getCodeTable(charQ.dequeue(), "", codeTable);
 
         // print the code table
         for (Character key : codeTable.keySet()) {

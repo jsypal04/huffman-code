@@ -1,7 +1,6 @@
 package queue;
 
 import queue.linkedList.SortedList;
-import binaryTree.Node;
 
 public class PriorityQueue {
     private SortedList qList;

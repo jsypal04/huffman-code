@@ -1,4 +1,4 @@
-package binaryTree;
+package queue;
 
 public class Node {
     private int data;

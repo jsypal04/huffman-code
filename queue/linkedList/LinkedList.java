@@ -1,6 +1,6 @@
 package queue.linkedList;
 
-import binaryTree.Node;
+import queue.Node;
 
 // class to manage the linked list
 public class LinkedList {

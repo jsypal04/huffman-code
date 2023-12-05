@@ -1,6 +1,6 @@
 package queue.linkedList;
 
-import binaryTree.Node;
+import queue.Node;
 
 public class SortedList extends LinkedList {
 
